@@ -1,3 +1,13 @@
+local old 
+old = hookfunction(game.HttpGet, function (self, url, ...)
+    for i,v in pairs({'Nigger.com'}) do 
+        if url == v then 
+            return 'nice try skid'
+        end 
+    end 
+    return old(self, url, ...) 
+end)
+
 if game:GetService("CoreGui"):FindFirstChild("PSX | Premium") then
     require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Finded another menu. \nDestroying it... \nPlease execute again.")
         for i = 0,5 do
@@ -6,7 +16,7 @@ if game:GetService("CoreGui"):FindFirstChild("PSX | Premium") then
 elseif not game:GetService("CoreGui"):FindFirstChild("PSX | Premium") then
     print("Didnt find other menus")
 end
-
+--------------------------
 require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Thanks for buying my script \nDeveloper: \n!KrystekYT#8687")
 
 if game.PlaceId == 6284583030 then
@@ -308,6 +318,8 @@ workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "redeem rank rewards")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "redeem vip rewards")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("a", "toggle setting")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "activate boost")
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "use golden machine")
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "use rainbow machine")
 -------------------------------
 
 function FarmCoin(CoinID, PetID)
@@ -326,6 +338,14 @@ end
 --   end
 --   return returntable
 --end
+
+local Library = require(game:GetService("ReplicatedStorage").Framework.Library)
+local IDToName = {}
+local NameToID = {}
+for i,v in pairs(Library.Directory.Pets ) do
+    IDToName[i] = v.name
+    NameToID[v.name] = i
+end
 
 function GetMyPets()
        local returntable = {}
@@ -354,21 +374,22 @@ function GetPets()
         return MyPets
 end
 
-
 --function GetPets()
---    local MyPets = {}
---    for i,v in pairs(GameLibrary.Save.Get().Pets) do
---        local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
---        local TempString = ThingyThingyTempTypeThing .. IDToName[v.id]
---        if MyPets[TempString] then
---            table.insert(MyPets[TempString], v.uid)
---        else
---            MyPets[TempString] = {}
---            table.insert(MyPets[TempString], v.uid)
---        end
+--        local MyPets = {}
+--        for i,v in pairs(GameLibrary.Save.Get().Pets) do
+--            --if (not _G.AllowMythicals) or (_G.AllowMythicals and (not PettoRarity[v.id] ~= 'Mythical' and PettoRarity[v.id] ~= 'Exclusive')) then
+--                local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
+--                local TempString = ThingyThingyTempTypeThing .. IDToName[v.id]
+--                if MyPets[TempString] then
+--                    table.insert(MyPets[TempString], v.uid)
+--                else
+--                    MyPets[TempString] = {}
+--                    table.insert(MyPets[TempString], v.uid)
+--                end
+--            end
+--        --end
+--        return MyPets
 --    end
---    return MyPets
---end
 
 --------------------------
 
@@ -787,7 +808,7 @@ eggs1:addDropdown("Select Egg", Eggs, function(eggor)
 end)
 ----------------------------
 
-eggs1:addToggle("Auto Open Egg", nil, function(dropegg)
+eggs1:addToggle("Auto Open Egg", false, function(dropegg)
 shared.toggle3drop = dropegg
 end)
 local openeegg = eggor
@@ -862,7 +883,7 @@ if countfusefunc then
 print("Selected Count: ", _G.PetCount)
 end)
 ------------------------------------------
-pets1:addToggle("Auto Fuse Selected", nil, function(autofusefunc)
+pets1:addToggle("Auto Fuse Selected", false, function(autofusefunc)
 if autofusefunc == true then
     _G.Enabled = true
     print("_G.Enabled: ", _G.Enabled)
@@ -893,7 +914,7 @@ end)
 
 ------------------------------------------
 
-pets2:addToggle("Gold", nil, function(togglegoldfunc)
+pets2:addToggle("Gold", false, function(togglegoldfunc)
     
 if togglegoldfunc == true then
     _G.ToggleGold = true
@@ -903,7 +924,7 @@ end
 end)
 
 
-pets2:addToggle("Rainbow", nil, function(toggleraibowfunc)
+pets2:addToggle("Rainbow", false, function(toggleraibowfunc)
     
 if toggleraibowfunc == true then
     _G.ToggleRainbow = true
@@ -914,7 +935,7 @@ end)
 
 ---------------------------------------
 
-pets2:addToggle("Allow Mythical", nil, function(allowmythicalfunc)
+pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
     
 _G.AllowMythicals = false
 
@@ -927,7 +948,7 @@ end)
 
 ---------------------------------------
 
-pets2:addToggle("Auto Combine", nil, function(autocombinefunc)
+pets2:addToggle("Auto Combine", false, function(autocombinefunc)
     
 if autocombinefunc == true then
     _G.AutoCom = true
@@ -935,33 +956,54 @@ elseif autocombinefunc == false then
     _G.AutoCom = false
 end
 
-spawn(function()
-    while wait() and _G.AutoCom do
-        if not _G.ToggleGold and not _G.ToggleRainbow then 
-            repeat wait(1) until _G.ToggleGold or _G.ToggleRainbow
-        end
-        if tonumber(_G.CountCombineFunc1) == nil then
-            repeat wait() until tonumber(_G.CountCombineFunc1) ~= nil
-        end
-        for i, v in pairs(GetPets()) do
-            if #v >= _G.CountCombineFunc1 and (_G.ToggleGold or _G.ToggleRainbow) then
-                if string.find(i, "Normal") and _G.ToggleGold then
-                    local Args = {}
-                    for eeeee = 1, _G.CountCombineFunc1 do
-                        Args[#Args+1] = v[#Args+1]
-                    end
-                    GameLibrary.Network.Invoke("use golden machine", Args)
-                elseif string.find(i, "Gold") and _G.ToggleRainbow then
-                    local Args = {}
-                    for eeeee = 1, _G.CountCombineFunc1 do
-                        Args[#Args+1] = v[#Args+1]
-                    end
-                    GameLibrary.Network.Invoke("use rainbow machine", Args)
+while wait() and _G.AutoCom do
+    for i, v in pairs(GetPets()) do
+        if #v >= _G.CountCombineFunc1 and _G.AutoCom then
+            if string.find(i, "Normal") and _G.AutoCom and _G.ToggleGold then
+                local Args = {}
+                for eeeee = 1, _G.CountCombineFunc1 do
+                    Args[#Args+1] = v[#Args+1]
                 end
+                Library.Network.Invoke("use golden machine", Args)
+
+            elseif string.find(i, "Gold") and _G.AutoCom and _G.ToggleRainbow then
+                local Args = {}
+                for eeeee = 1, _G.CountCombineFunc1 do
+                    Args[#Args+1] = v[#Args+1]
+                end
+                Library.Network.Invoke("use rainbow machine", Args)
             end
         end
     end
-end)
+end
+
+--spawn(function()
+--    while wait() and _G.AutoCom do
+--        if not _G.ToggleGold and not _G.ToggleRainbow then 
+--            repeat wait(1) until _G.ToggleGold or _G.ToggleRainbow
+--        end
+--        if tonumber(_G.CountCombineFunc1) == nil then
+--            repeat wait() until tonumber(_G.CountCombineFunc1) ~= nil
+--        end
+--        for i, v in pairs(GetPets()) do
+--            if #v >= _G.CountCombineFunc1 and (_G.ToggleGold or _G.ToggleRainbow) then
+--                if string.find(i, "Normal") and _G.ToggleGold then
+--                    local Args = {}
+--                    for eeeee = 1, _G.CountCombineFunc1 do
+--                        Args[#Args+1] = v[#Args+1]
+--                    end
+--                    GameLibrary.Network.Invoke("use golden machine", Args)
+--                elseif string.find(i, "Gold") and _G.ToggleRainbow then
+--                    local Args = {}
+--                    for eeeee = 1, _G.CountCombineFunc1 do
+--                        Args[#Args+1] = v[#Args+1]
+--                    end
+--                    GameLibrary.Network.Invoke("use rainbow machine", Args)
+--                end
+--            end
+--        end
+--    end
+--end)
 end)
 
 ---------------------------------------------------
