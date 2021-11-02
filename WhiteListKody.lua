@@ -7,12 +7,12 @@ local whitelisted = {
 '639977402', -- DawajSernik
 '531348383', -- Wariatka1337
 '1100409110', -- Polska_Kielbaska
-'',
-'',
-'',
-'',
-'',
-'',
+--'',
+--'',
+--'',
+--'',
+--'',
+--'',
 }
 return whitelisted
 
