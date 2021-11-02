@@ -1,5 +1,5 @@
 userids = {
-[320664513] = true, -- KrystekYT
+[320664513] = false, -- KrystekYT
 [294992884] = true, -- DjRudzik
 [2898280324] = true, -- Weronika9896
 [1764348997] = true, -- Kacpero202
