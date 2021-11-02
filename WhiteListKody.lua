@@ -1,7 +1,6 @@
 wait(1)
 
 local whitelisted = {
---'320664513', -- KrystekYT
 '294992884', -- DjRudzik
 '2898280324', -- Weronika9896
 '1764348997', -- Kacpero202
