@@ -1,12 +1,18 @@
-local old 
-old = hookfunction(game.HttpGet, function (self, url, ...)
-    for i,v in pairs({'aspkdnas.com'}) do 
-        if url == v then 
-            return 'asfla[sfad'
-        end 
-    end 
-    return old(self, url, ...) 
+local links = {
+    'https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/test1.lua', --whitelisted osoby,
+}
+
+local old
+old = hookfunction(game.HttpGet, function(self, url, ...)
+    for i,v in pairs(links) do
+        if url == v then
+            return 'skid'
+        end
+    end
+    return old(self, url, ...)
 end)
+
+wait()
 
 wait()
 
