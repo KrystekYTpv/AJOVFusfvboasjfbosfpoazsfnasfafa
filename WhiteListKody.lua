@@ -1,4 +1,4 @@
-wait(2)
+
 local whitelisted = {
 '320664513', -- KrystekYT
 '294992884', -- DjRudzik
