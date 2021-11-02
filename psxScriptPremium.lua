@@ -541,7 +541,9 @@ end
                     if (v.n == _G.itemtofarmfunc) or (_G.itemtofarmfunc == 'All') then
                         local starttick = tick()
                         for a, b in pairs(pethingy) do
-                            pcall(function() FarmCoin(v.index, b) end)
+                            coroutine.wrap(function()
+                                FarmCoin(v.index, b)
+                            end)()
                         end
                         repeat task.wait(0.001) until not game:GetService("Workspace")["__THINGS"].Coins:FindFirstChild(v.index) or #game:GetService("Workspace")["__THINGS"].Coins[v.index].Pets:GetChildren() == 0 or not _G.FarmingToggle or _G.methodfunc ~= 'Chest'
                         --warn(v.n .. " has been broken in", tick()-starttick)
