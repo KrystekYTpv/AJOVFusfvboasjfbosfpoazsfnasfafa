@@ -556,8 +556,7 @@ for i,v in pairs(game.ReplicatedStorage.Game.Eggs:GetChildren()) do
     for i2,v2 in pairs(v:GetChildren()) do 
         table.insert(Eggs, v2.Name)
     end 
-end 
-table.foreach(Eggs, print)
+end
 
 eggs1:addDropdown("Select Egg", Eggs, function(eggor)
     if eggor then
@@ -648,9 +647,9 @@ pets2:addToggle("Allow Mythical", nil, function(allowmythicalfunc)
 _G.AllowMythicals = false
 
 if allowmythicalfunc == true then
-    _G.AllowMythicals = true
-elseif allowmythicalfunc == false then
     _G.AllowMythicals = false
+elseif allowmythicalfunc == false then
+    _G.AllowMythicals = true
 end
 end)
 
