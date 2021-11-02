@@ -317,7 +317,7 @@ workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "redeem dark matter pet")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "redeem rank rewards")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "redeem vip rewards")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("a", "toggle setting")
-workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "activate boost")
+workspace.__THINGS.__REMOTES.MAIN:FireServer("a", "activate boost")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "use golden machine")
 workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "use rainbow machine")
 -------------------------------
@@ -940,9 +940,9 @@ pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
 _G.AllowMythicals = false
 
 if allowmythicalfunc == true then
-    _G.AllowMythicals = true
-elseif allowmythicalfunc == false then
     _G.AllowMythicals = false
+elseif allowmythicalfunc == false then
+    _G.AllowMythicals = true
 end
 end)
 
