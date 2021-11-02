@@ -21,8 +21,8 @@ return whitelisted
 --[USERIDHERE] = true - wlacza dostep
 --[USERIDHERE] = false - wylacza dostep
 --
---userids = {
---[320664513] = true, -- KrystekYT
+userids = {
+[320664513] = true, -- KrystekYT
 --[294992884] = true, -- DjRudzik
 --[2898280324] = true, -- Weronika9896
 --[1764348997] = true, -- Kacpero202
@@ -35,5 +35,5 @@ return whitelisted
 --[] = true, -- 
 --[] = true, -- 
 --[] = true, -- 
---}
---return userids
+}
+return userids
