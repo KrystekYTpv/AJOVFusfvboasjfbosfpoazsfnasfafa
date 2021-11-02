@@ -480,6 +480,11 @@ end
 
 -------------------------
 
+if _G.MyConnection then _G.MyConnection:Disconnect() end
+    _G.MyConnection = game.Workspace.__THINGS.Orbs.ChildAdded:Connect(function(Orb)
+        game.Workspace.__THINGS.__REMOTES["claim orbs"]:FireServer({{Orb.Name}})
+    end)
+
 section1:addToggle("Farming Toggle", false, function(farmingtogglefunc)
 if farmingtogglefunc == true then
     _G.FarmingToggle = true
@@ -673,27 +678,27 @@ end
 
 -------------------------------------------------------------------------------------------------
 -- Farming Addons
-
-section1:addToggle("Auto Collect Orbs", false, function(autocollecting)
-
-if autocollecting == true then
-    _G.CollectOrbs = true
-elseif autocollecting == false or destroygui then
-    _G.CollectOrbs = false
-    end
-
-function CollectOrbs()
-   local ohTable1 = {[1] = {}}
-   for i,v in pairs(game.workspace['__THINGS'].Orbs:GetChildren()) do
-       ohTable1[1][i] = v.Name
-        end
-   game.workspace['__THINGS']['__REMOTES']["claim orbs"]:FireServer(ohTable1)
-    end
-
-while wait() and _G.CollectOrbs do
-      pcall(function() CollectOrbs() end)
-end
-end)
+--
+--section1:addToggle("Auto Collect Orbs", false, function(autocollecting)
+--
+--if autocollecting == true then
+--    _G.CollectOrbs = true
+--elseif autocollecting == false or destroygui then
+--    _G.CollectOrbs = false
+--    end
+--
+--function CollectOrbs()
+--   local ohTable1 = {[1] = {}}
+--   for i,v in pairs(game.workspace['__THINGS'].Orbs:GetChildren()) do
+--       ohTable1[1][i] = v.Name
+--        end
+--   game.workspace['__THINGS']['__REMOTES']["claim orbs"]:FireServer(ohTable1)
+--    end
+--
+--while wait() and _G.CollectOrbs do
+--      pcall(function() CollectOrbs() end)
+--end
+--end)
 
 ---------------
 
