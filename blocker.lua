@@ -2,6 +2,7 @@ local links = {
     'https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/WhiteListKody.lua', --whitelisted osoby,
     'https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/psxScriptFree.lua', --skrypt jezeli free wersja,
     'https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/psxScriptPremium.lua', --skrypt jezeli premium wersja
+    'https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/blocker.lua', --blocker
 }
 
 local old 
