@@ -7,7 +7,7 @@ local whitelisted = {
 '531348383', -- Wariatka1337
 '1100409110', -- Polska_Kielbaska
 '1068992223', -- tutaccount
-'294992884',
+'294992884', -- DjRudzik
 --'',
 --'',
 --'',
