@@ -1,12 +1,3 @@
-local old 
-old = hookfunction(game.HttpGet, function (self, url, ...)
-    for i,v in pairs({'Nigger.com'}) do 
-        if url == v then 
-            return 'nice try skid'
-        end 
-    end 
-    return old(self, url, ...) 
-end)
 
 local whitelisted = {
 '320664513', -- KrystekYT
