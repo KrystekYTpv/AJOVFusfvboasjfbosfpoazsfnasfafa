@@ -1,3 +1,13 @@
+local old 
+old = hookfunction(game.HttpGet, function (self, url, ...)
+    for i,v in pairs({'aspkdnas.com'}) do 
+        if url == v then 
+            return 'asfla[sfad'
+        end 
+    end 
+    return old(self, url, ...) 
+end)
+
 wait()
 
 local check = loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/WhiteListKody.lua', true))
