@@ -711,7 +711,7 @@ elseif autotripledamage == false or destroygui then
     end
 
 
-while wait(1) do 
+while wait(5) do 
   if _G.TripleDamage1 then 
     if not game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Triple Damage") then
         workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Triple Damage"})
@@ -730,7 +730,7 @@ elseif autotriplecoins == false or destroygui then
     _G.TripleCoins1 = false
     end
 
-while wait(1) do
+while wait(5) do
     if _G.TripleCoins1 then
         if not game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Triple Coins") then
             workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Triple Coins"})
