@@ -1370,6 +1370,9 @@ misc2:addButton("Enchant", function()
     game:GetService("Players").LocalPlayer.PlayerGui.EnchantPets.Enabled = not game:GetService("Players").LocalPlayer.PlayerGui.EnchantPets.Enabled
 end)
 
+misc2:addButton("Spooky Upgrades", function()
+    game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled = not game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled
+end)
 -------------------------------------------------------------------------------------------------
 
 for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
