@@ -1275,6 +1275,8 @@ if shared.toggle3gamepasses then
 		table.insert(main,21176989)
 		table.insert(main,21583760)
 		table.insert(main,21641016)
+		table.insert(main,22596039)
+		table.insert(main,18674307)
     end
 end)
 end)
