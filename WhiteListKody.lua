@@ -12,6 +12,6 @@ userids = {
 [652382788] = true, -- lewowity
 [734725590] = true, -- WiktorGames32
 [761017630] = true, -- bobejlk
---[] = true, -- 
+[2864331664] = true, -- PolCher1
 }
 return userids
