@@ -9,8 +9,8 @@ userids = {
 [1068992223] = true, -- tutaccount
 [2433227342] = true, -- KubaGames2115
 [2854035659] = true, -- NobekWloluu
-[652382788] = true, -- lewowity, 652382788
---[] = true, -- 
+[652382788] = true, -- lewowity
+[734725590] = true, -- WiktorGames32
 --[] = true, -- 
 --[] = true, -- 
 }
