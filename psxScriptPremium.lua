@@ -360,7 +360,7 @@ function GetMyPets()
 function GetPets()
         local MyPets = {}
         for i,v in pairs(GameLibrary.Save.Get().Pets) do
-            if (_G.AllowMythicals) or (_G.AllowMythicals and (not PettoRarity[v.id] ~= 'Mythical' and PettoRarity[v.id] ~= 'Exclusive' and not string.find(IDToName[v.id]:lower(), "maskot"))) then
+            if (not _G.AllowMythicals) or (_G.AllowMythicals and (PettoRarity[v.id] ~= 'Mythical' and PettoRarity[v.id] ~= 'Exclusive' and not string.find(IDToName[v.id]:lower(), "maskot"))) then
                 local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
                 local TempString = ThingyThingyTempTypeThing .. IDToName[v.id]
                 if MyPets[TempString] then
@@ -372,7 +372,7 @@ function GetPets()
             end
         end
         return MyPets
-end
+    end
 
 --function GetPets()
 --        local MyPets = {}
@@ -757,7 +757,7 @@ end)
 misc1:addButton("Better Search", function(bettersearchmessage)
     print("Pet Counter Loaded")
     loadstring(game:HttpGet('https://pastebin.com/raw/JUEtgq95'))()
-    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Better Search Loaded \nNow you can use type: \n- Pet Name \n- Pet Nickname \n- Pet Rarity (Exclusive, Mythical, Legendary, Epic, Rare, Basic) \n- Pet Type (Dark Natter, Rainbow, Gold and Normal \n- Enchants like Royalty etc")
+    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Better Search Loaded \nNow you can use type: \n- Pet Name \n- Pet Nickname \n- Pet Rarity (Exclusive, Mythical, Legendary, Epic, Rare, Basic) \n- Pet Type (Dark Natter, Rainbow, Gold and Normal \n- Enchants like Royalty etc \nAnd UnEquip Button")
 end)
 
 ------------------
