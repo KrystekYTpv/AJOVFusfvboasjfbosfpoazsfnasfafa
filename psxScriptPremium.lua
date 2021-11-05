@@ -361,7 +361,7 @@ function GetMyPets()
 function GetPets()
         local MyPets = {}
         for i,v in pairs(GameLibrary.Save.Get().Pets) do
-            if (not _G.AllowMythicals) or (_G.AllowMythicals and (PettoRarity[v.id] ~= 'Mythical' and PettoRarity[v.id] ~= 'Exclusive' and not string.find(IDToName[v.id]:lower(), "maskot"))) then
+            --if (not _G.AllowMythicals) or (_G.AllowMythicals and (PettoRarity[v.id] ~= 'Mythical' and PettoRarity[v.id] ~= 'Exclusive' and not string.find(IDToName[v.id]:lower(), "maskot"))) then
                 local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
                 local TempString = ThingyThingyTempTypeThing .. IDToName[v.id]
                 if MyPets[TempString] then
@@ -370,7 +370,7 @@ function GetPets()
                     MyPets[TempString] = {}
                     table.insert(MyPets[TempString], v.uid)
                 end
-            end
+            --end
         end
         return MyPets
     end
@@ -943,16 +943,16 @@ end)
 
 ---------------------------------------
 
-pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
+--pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
     
-_G.AllowMythicals = false
+--_G.AllowMythicals = false
 
-if allowmythicalfunc == true then
-    _G.AllowMythicals = true
-elseif allowmythicalfunc == false then
-    _G.AllowMythicals = false
-end
-end)
+--if allowmythicalfunc == true then
+--    _G.AllowMythicals = true
+--elseif allowmythicalfunc == false then
+--    _G.AllowMythicals = false
+--end
+--end)
 
 ---------------------------------------
 
