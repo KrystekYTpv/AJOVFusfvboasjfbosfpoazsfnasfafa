@@ -20,7 +20,7 @@ userids = {
 [720781459] = true, -- Kuraworkout123
 [1038290884] = true, -- tymowie
 [473416850] = true, -- JedrekGir4
---[] = true, -- 
+[417336375] = true, -- MrKoxDominik
 --[] = true, -- 
 }
 return userids
