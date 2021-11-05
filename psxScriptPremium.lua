@@ -189,6 +189,7 @@ local pets1 = page:addSection("Auto Fuse")
 local pets2 = page:addSection("Auto Gold/Rainbow")
 local pets3 = page:addSection("Auto Enchant | Disabled")
 local pets4 = page:addSection("Dark Matter")
+
 -------------------------------------------------------------------------------------------------
 
 -- Settings page
@@ -529,7 +530,7 @@ end
                     end
                 end
 
-            --elseif _G.methodfunc == 'Chest' then
+        --    elseif _G.methodfunc == 'Chest' then
         --        for i,v in pairs(AllChests()) do
         --            if (v.n == _G.itemtofarmfunc) or (_G.itemtofarmfunc == 'All') then
         --                local starttick = tick()
@@ -711,7 +712,7 @@ elseif autotripledamage == false or destroygui then
     end
 
 
-while wait(5) do 
+while wait(5) do
   if _G.TripleDamage1 then 
     if not game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Triple Damage") then
         workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Triple Damage"})
@@ -755,9 +756,9 @@ end)
 
 
 misc1:addButton("Better Search", function(bettersearchmessage)
+    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Better Search Loaded \nNow you can use type: \n- Pet Name \n- Pet Nickname \n- Pet Rarity (Exclusive, Mythical, Legendary, Epic, Rare, Basic) \n- Pet Type (Dark Natter, Rainbow, Gold and Normal \n- Enchants like Royalty etc")
     print("Pet Counter Loaded")
     loadstring(game:HttpGet('https://pastebin.com/raw/JUEtgq95'))()
-    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Better Search Loaded \nNow you can use type: \n- Pet Name \n- Pet Nickname \n- Pet Rarity (Exclusive, Mythical, Legendary, Epic, Rare, Basic) \n- Pet Type (Dark Natter, Rainbow, Gold and Normal \n- Enchants like Royalty etc")
 end)
 
 ------------------
@@ -942,20 +943,20 @@ end)
 
 ---------------------------------------
 
---pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
---    
---_G.AllowMythicals = false
---
---if allowmythicalfunc == true then
---    _G.AllowMythicals = true
---elseif allowmythicalfunc == false then
---    _G.AllowMythicals = false
---end
---end)
+pets2:addToggle("Allow Mythical", false, function(allowmythicalfunc)
+    
+_G.AllowMythicals = false
+
+if allowmythicalfunc == true then
+    _G.AllowMythicals = true
+elseif allowmythicalfunc == false then
+    _G.AllowMythicals = false
+end
+end)
 
 ---------------------------------------
 
-pets2:addToggle("Auto Combine", false, function(autocombinefunc)
+pets2:addToggle("Start Auto Gold/Rainbow", false, function(autocombinefunc)
     
 if autocombinefunc == true then
     _G.AutoCom = true
@@ -1309,6 +1310,12 @@ else
         vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 end
+
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
 end)
 -------------------------------------------------------------------------------------------------
 
@@ -1375,8 +1382,9 @@ end)
 misc2:addButton("Spooky Upgrades", function()
     game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled = not game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled
 end)
--------------------------------------------------------------------------------------------------
 
+
+-------------------------------------------------------------------------------------------------
 for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
 Settings2:addColorPicker(theme, color, function(color3)
 venyx:setTheme(theme, color3)
