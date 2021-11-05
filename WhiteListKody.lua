@@ -19,7 +19,7 @@ userids = {
 [1038425504] = true, -- KubaJeden337
 [720781459] = true, -- Kuraworkout123
 [1038290884] = true, -- tymowie
---[] = true, -- 
+[473416850] = true, -- JedrekGir4
 --[] = true, -- 
 --[] = true, -- 
 }
