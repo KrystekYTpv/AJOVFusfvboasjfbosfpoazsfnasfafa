@@ -22,9 +22,9 @@ local premiumList = {
   [1038290884] = "tymowie", -- tymowie
   [473416850] = "JedrekGir4", -- JedrekGir4
   [417336375] = "MrKoxDominik", -- MrKoxDominik
-  [2866274812] = "OrderClaim3"
-  [2712629196] = "istudy7"
-  [344467002] = "OskarKoxpp"
+  [2866274812] = "OrderClaim3",
+  [2712629196] = "istudy7",
+  [344467002] = "OskarKoxpp",
 }
 return premiumList
 --
