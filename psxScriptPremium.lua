@@ -1145,7 +1145,7 @@ end)
 
 -------------------------------
 
-pets2:addSlider("Select Dark Matter Count", 0, 1, 6, function(countdarkmatterfunc)
+pets4:addSlider("Select Dark Matter Count", 0, 1, 6, function(countdarkmatterfunc)
     if countdarkmatterfunc then
         _G.CountDarkMatterFunc1 = countdarkmatterfunc
     end
