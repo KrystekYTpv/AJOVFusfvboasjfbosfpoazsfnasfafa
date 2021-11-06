@@ -870,8 +870,7 @@ end
 print("Selected Type: ", _G.Type)
 end)
 ------------------------------------------
-local CountFuseList = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-pets1:addDropdown("Select Count", CountFuseList, function(countfusefunc)
+pets1:addSlider("Select Count", 3, 3, 12, function(countfusefunc)
 if countfusefunc then
     _G.PetCount = countfusefunc
     _G.FuseList = {
@@ -902,9 +901,7 @@ end)
 ---------------------------------------
 --auto gold/rainbow
 
-local CountCombineList = {1, 2, 3, 4, 5, 6}
-
-pets2:addDropdown("Select Count", CountCombineList, function(countcombinefunc)
+pets2:addSlider("Select Count", 0, 1, 6, function(countcombinefunc)
     if countcombinefunc then
         _G.CountCombineFunc1 = countcombinefunc
     end
@@ -1148,7 +1145,7 @@ end)
 
 -------------------------------
 
-pets4:addDropdown("Select Dark Matter Count", CountCombineList, function(countdarkmatterfunc)
+pets2:addSlider("Select Dark Matter Count", 0, 1, 6, function(countdarkmatterfunc)
     if countdarkmatterfunc then
         _G.CountDarkMatterFunc1 = countdarkmatterfunc
     end
