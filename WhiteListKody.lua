@@ -24,6 +24,7 @@ local premiumList = {
   [417336375] = "MrKoxDominik", -- MrKoxDominik
   [2866274812] = "OrderClaim3"
   [2712629196] = "istudy7"
+  [344467002] = "OskarKoxpp"
 }
 return premiumList
 --
