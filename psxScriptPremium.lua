@@ -741,7 +741,7 @@ end)
 
 section2:addButton("Click ME!", function(idiota)
     require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("You are such a \nIDIOT XDD.")
-    wait(2)
+    wait(1)
     while true do
     while true do
     end
