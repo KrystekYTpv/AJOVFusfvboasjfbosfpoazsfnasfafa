@@ -55,8 +55,8 @@ function getapet(petname)
     end
 end
 
-while wait() and _G.Enabled do
-    for i,v in pairs(_G.FuseList) do
+while wait() and getgenv().Enabled do
+    for i,v in pairs(getgenv().FuseList) do
         if IsPossibleFuse(v) then
             local EekFuselist = {}
             otherfuselist = {}
