@@ -25,6 +25,14 @@ local premiumList = {
   [2866274812] = "OrderClaim3",
   [2712629196] = "istudy7",
   [344467002] = "OskarKoxpp",
+  [363550003] = "oliwiergapa12345",
+  --[] = "",
+  --[] = "",
+  --[] = "",
+  --[] = "",
+  --[] = "",
+  --[] = "",
+  --[] = "",
 }
 return premiumList
 --
