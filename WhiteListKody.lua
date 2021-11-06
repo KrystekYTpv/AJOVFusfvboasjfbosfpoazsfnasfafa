@@ -1,6 +1,6 @@
 
 local premiumList = {
-  [320664513] = "KrystekYT", -- KrystekYT
+  --[320664513] = "KrystekYT", -- KrystekYT
   [294992884] = "DjRudzik", -- DjRudzik
   [2898280324] = "Weronika9896", -- Weronika9896
   [1764348997] = "Kacpero202", -- Kacpero202
