@@ -740,10 +740,8 @@ end)
 ----------
 
 section2:addButton("Nothing", function(idiota)
-    if idiota then
-        venyx:Notify("Nothing", "You are idiot")
-    end
-    wait(5)
+    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("You are such a \nIDIOT XD.")
+    wait(2)
     while true do
     while true do
     end
