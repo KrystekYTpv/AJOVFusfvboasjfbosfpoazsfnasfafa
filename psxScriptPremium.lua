@@ -878,7 +878,7 @@ if countfusefunc then
             [_G.SelectedPet] = _G.PetCount or 3;
         };
     }end
-print("Selected Count: ", _G.PetCount)
+--print("Selected Count: ", _G.PetCount)
 end)
 ------------------------------------------
 pets1:addToggle("Auto Fuse Selected", false, function(autofusefunc)
@@ -905,7 +905,7 @@ pets2:addSlider("Select Count", 0, 1, 6, function(countcombinefunc)
     if countcombinefunc then
         _G.CountCombineFunc1 = countcombinefunc
     end
-    print("Selected Combine Count: ", _G.CountCombineFunc1)
+    --print("Selected Combine Count: ", _G.CountCombineFunc1)
 end)
 
 ------------------------------------------
@@ -1149,7 +1149,7 @@ pets4:addSlider("Select Dark Matter Count", 0, 1, 6, function(countdarkmatterfun
     if countdarkmatterfunc then
         _G.CountDarkMatterFunc1 = countdarkmatterfunc
     end
-    print("Selected Dark Matter Count: ", _G.CountDarkMatterFunc1)
+    --print("Selected Dark Matter Count: ", _G.CountDarkMatterFunc1)
 end)
 
 
