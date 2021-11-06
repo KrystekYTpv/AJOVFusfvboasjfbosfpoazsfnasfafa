@@ -185,7 +185,7 @@ local pets4 = page:addSection("Dark Matter")
 
 -- Troll page
 local page = venyx:addPage("Troll", 329532393)
-local troll1 = page:addSection("Troll Testing")
+local troll1 = page:addSection("Troll")
 
 -------------------------------------------------------------------------------------------------
 -- Settings page
