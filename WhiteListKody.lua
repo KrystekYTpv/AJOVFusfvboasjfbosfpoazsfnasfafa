@@ -4,7 +4,7 @@ userids = {
 [2898280324] = true, -- Weronika9896
 [1764348997] = true, -- Kacpero202
 [639977402] = true, -- DawajSernik
-[531348383] = false, -- Wariatka1337
+[531348383] = true, -- Wariatka1337
 [1100409110] = true, -- Polska_Kielbaska
 [1068992223] = true, -- tutaccount
 [2433227342] = true, -- KubaGames2115
@@ -21,7 +21,7 @@ userids = {
 [1038290884] = true, -- tymowie
 [473416850] = true, -- JedrekGir4
 [417336375] = true, -- MrKoxDominik
-[2866274812] = true, -- 
+[2866274812] = false, -- 
 }
 return userids
 ----
