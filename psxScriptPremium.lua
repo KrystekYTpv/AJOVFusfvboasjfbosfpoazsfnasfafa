@@ -183,6 +183,11 @@ local pets4 = page:addSection("Dark Matter")
 
 -------------------------------------------------------------------------------------------------
 
+-- Troll page
+local page = venyx:addPage("Troll", 329532393)
+local troll1 = page:addSection("Troll Testing")
+
+-------------------------------------------------------------------------------------------------
 -- Settings page
 local page = venyx:addPage("Settings", 5107159171)
 local Settings1 = page:addSection("Settings")
@@ -1369,6 +1374,30 @@ end)
 
 misc2:addButton("Spooky Upgrades", function()
     game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled = not game:GetService("Players").LocalPlayer.PlayerGui.SpookyUpgrades.Enabled
+end)
+
+-------------------------------------------------------------------------------------------------
+--Troll Page
+
+troll1:addButton("Visual Dupe Gems", function()
+function comma_value(amount)
+  local formatted = amount
+  while true do  
+    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+    if (k == 0) then
+      break
+    end
+  end
+  return formatted
+end
+
+local diamonds = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount
+local old = diamonds.Text
+local oldNumber = string.gsub(old, ",", "")
+local newNumber = oldNumber * 2
+local new = comma_value(newNumber)
+local newString = tostring(new)
+diamonds.Text = newString
 end)
 
 
