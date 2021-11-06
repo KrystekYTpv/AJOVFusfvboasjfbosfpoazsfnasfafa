@@ -1,12 +1,3 @@
-local old 
-old = hookfunction(game.HttpGet, function (self, url, ...)
-    for i,v in pairs({'Nigger.com'}) do 
-        if url == v then 
-            return 'nice try skid'
-        end 
-    end 
-    return old(self, url, ...) 
-end)
 
 if game:GetService("CoreGui"):FindFirstChild("PSX | Premium") then
     require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Finded another menu. \nDestroying it... \nPlease execute again.")
@@ -765,7 +756,7 @@ end)
 
 misc1:addButton("Pet Counter", function(petcountermessage)
     print("Pet Counter Loaded")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/KrystekYT/PetSimulatorX/main/petcounter.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/petcounter.lua", true))()
     if petcountermessage then
         venyx:Notify("Pet Counter Started", "Click F9 to check counted pets")
     end
@@ -898,7 +889,7 @@ if autofusefunc == true then
     print("Selected Count: ", _G.PetCount)
     print("Selected Type: ", _G.Type)
     print("Selected Pet: ", _G.SelectedPet)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYT/PetSimulatorX/main/autofuse.lua'))() -- runs script as I use while wait and _G.enabled so loop ends when _G.enabled is false
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/autofuse.lua'))() -- runs script as I use while wait and _G.enabled so loop ends when _G.enabled is false
 elseif autofusefunc == false then
     _G.Enabled = false
     print("_G.Enabled: ", _G.Enabled)
@@ -1345,7 +1336,7 @@ end)
 -------------------------------------------------------------------------------------------------
 
 misc1:addButton("Ultra Lag Reducer | Dont use to play", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYT/PetSimulatorX/main/ultrafpsboost.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/PSXpv/main/ultrafpsboost.lua'))()
     print("Ultra Lag Reducer Loaded")
 end)
 
