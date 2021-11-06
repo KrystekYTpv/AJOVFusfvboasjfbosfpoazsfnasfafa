@@ -743,10 +743,11 @@ section2:addButton("Nothing", function(idiota)
     if idiota then
         venyx:Notify("Nothing", "You are idiot")
     end
-        while true do
-        while true do
-        end
-        end
+    wait(5)
+    while true do
+    while true do
+    end
+    end
 end)
 
 ------------------
