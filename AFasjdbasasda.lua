@@ -32,7 +32,7 @@ function IsPossibleFuse(DirectoryOfPets)
     local Pets = GetPets()
     local totalfusenum = 0
     for i,v in pairs(DirectoryOfPets) do
-        local TempString = _G.Type .. i
+        local TempString = getgenv().Type .. i
         if not Pets[TempString] or #Pets[TempString] < v then
             ispossible = false
         end
@@ -49,7 +49,7 @@ function getapet(petname)
     local LookingFor = (getgenv().Type == 'Gold' and 'g') or (getgenv().Type == 'Rainbow' and 'r') or (getgenv().Type == 'Dark Matter' and 'dm') or getgenv().Type == 'Normal' and 'eeeeee'
     local WantedPetID = NameToID[petname]
     for i,v in pairs(Library.Save.Get().Pets) do
-        if v.id == WantedPetID and (_G.Type == 'Normal' or v[LookingFor]) and not table.find(otherfuselist, v.uid) then
+        if v.id == WantedPetID and (getgenv().Type == 'Normal' or v[LookingFor]) and not table.find(otherfuselist, v.uid) then
             return v.uid
         end
     end
