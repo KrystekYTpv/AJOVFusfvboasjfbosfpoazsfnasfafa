@@ -46,7 +46,7 @@ end
 
 local otherfuselist = {}
 function getapet(petname)
-    local LookingFor = (_G.Type == 'Gold' and 'g') or (_G.Type == 'Rainbow' and 'r') or (_G.Type == 'Dark Matter' and 'dm') or _G.Type == 'Normal' and 'eeeeee'
+    local LookingFor = (getgenv().Type == 'Gold' and 'g') or (getgenv().Type == 'Rainbow' and 'r') or (getgenv().Type == 'Dark Matter' and 'dm') or getgenv().Type == 'Normal' and 'eeeeee'
     local WantedPetID = NameToID[petname]
     for i,v in pairs(Library.Save.Get().Pets) do
         if v.id == WantedPetID and (_G.Type == 'Normal' or v[LookingFor]) and not table.find(otherfuselist, v.uid) then
