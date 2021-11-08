@@ -29,7 +29,6 @@ local premiumList = {
   [794848188] = "QGAMINGQ",
   [752603418] = "chocsiebic",
   [2664387632] = "Baobab1234561",
-  [486961582] = "PracticeRU",
   [662182055] = "nikotyna12309",
   --[] = "",
   --[] = "",
