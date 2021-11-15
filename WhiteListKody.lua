@@ -41,21 +41,11 @@ local premiumList = {
   [435139310] = "RobloxEryk999",
   [3011513763] = "Needyourwater",
   [522388145] = "iditaxdpl1",
-  [2597305563] = "SqR3ByKu",
-  [277124142] = "F4M3K",
-  [1640980445] = "CoffinScripter",
-  [639102686] = "tostekp",
-  [255807696] = "alanolivierek",
-  [2919990262] = "R3voolsssssss",
-  [2760630259] = "Zawajkos",
-  [871461279] = "olliwaolliwa4",
-  [2263279814] = "DotykanieSieChujami",
   --[] = "",
   --[] = "",
   --[] = "",
   --[] = "",
   --[] = "",
   --[] = "",
-  
 }
 return premiumList
