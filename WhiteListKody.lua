@@ -1,11 +1,11 @@
 local premiumList = {
 	[320664513] = "KrystekYT",
+	[3048459662] = "KrystekVX",
 	[294992884] = "DjRudzik",
 	[2898280324] = "Weronika9896",
 	[1764348997] = "Kacpero202",
 	[639977402] = "DawajSernik",
 	[531348383] = "Wariatka1337",
-	[1100409110] = "Polska_Kielbaska"
 	[1068992223] = "tutaccount",
 	[2433227342] = "KubaGames2115",
 	[2854035659] = "NobekWloluu",
@@ -32,8 +32,6 @@ local premiumList = {
 	[867717867] = "Tadzid",
 	[505016070] = "koxlub1",
 	[948389332] = "Realxregionx",
-	[559755183] = "ItsReally_NotMe",
-	[3048459662] = "KrystekVX",
 	[932807417] = "MresezRBLX",
 	[526758091] = "Elkonpl898",
 	[670212684] = "kopa1266",
@@ -49,6 +47,19 @@ local premiumList = {
 	[2760630259] = "Zawajkos",
 	[871461279] = "olliwaolliwa4",
 	[2263279814] = "DotykanieSieChujami",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+	--[] = "",
+ 
+ 
+ 
+	--[559755183] = "ItsReally_NotMe",
 }
-
+ 
 return premiumList
