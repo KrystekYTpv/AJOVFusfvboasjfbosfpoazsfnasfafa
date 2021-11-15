@@ -50,11 +50,5 @@ local premiumList = {
   [2760630259] = "Zawajkos",
   [871461279] = "olliwaolliwa4",
   [2263279814] = "DotykanieSieChujami",
-  --[] = "",
-  --[] = "",
-  --[] = "",
-  --[] = "",
-  --[] = "",
-  --[] = "",
 }
 return premiumList
