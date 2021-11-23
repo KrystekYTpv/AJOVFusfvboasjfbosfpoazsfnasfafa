@@ -24,6 +24,14 @@ elseif v.r then
         TempTable[TempString] = {}
         table.insert(TempTable[TempString], v.uid)
     end
+ elseif v.dm then
+    local TempString = '*Dark Matter*: '..PetList[v.id]
+    if TempTable[TempString] then
+        table.insert(TempTable[TempString], v.uid)
+    else
+        TempTable[TempString] = {}
+        table.insert(TempTable[TempString], v.uid)
+    end
 else
     local TempString = '*Normal*: '..PetList[v.id]
     if TempTable[TempString] then
