@@ -39,7 +39,6 @@ local premiumList = {
 	[3011513763] = 'Needyourwater',
 	[522388145] = 'iditaxdpl1',
 	[2597305563] = 'SqR3ByKu',
-	[277124142] = 'F4M3K',
 	[1640980445] = 'CoffinScripter',
 	[564140004] = 'trolerafy',
 	[255807696] = 'alanolivierek',
