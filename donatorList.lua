@@ -11,6 +11,5 @@ local donatorList = {
     --[] = '',
     --[] = '',
     --[] = '',
-    
 }
 return donatorList
