@@ -10,6 +10,7 @@ local donatorList = {
     [1038290884] = 'tymowie',
     [932807417] = 'MresezRBLX',
     [2433227342] = 'KubaGames2115',
+    [3240679027] = 'Giovenix231',
     --[] = '',
 }
 return donatorList
