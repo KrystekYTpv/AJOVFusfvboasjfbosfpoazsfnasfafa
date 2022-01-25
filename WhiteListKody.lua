@@ -1,4 +1,5 @@
 local premiumList = {
+		[1028874214] = 'klocek27081',
 	[320664513] = 'KrystekYT',
 	[3048459662] = 'KrystekVX',
 	[294992884] = 'DjRudzik',
@@ -64,7 +65,6 @@ local premiumList = {
 	[912792597] = 'ROLLECZEK',
 	[420740497] = 'xAjven',
 	[3052063140] = 'piesio20155',
-	[1028874214] = 'klocek270811',
 	[421626382] = 'kopycho',
 	[1588595198] = 'Ninja_g2apl',
 	[3117371652] = 'NobekJestemX',
