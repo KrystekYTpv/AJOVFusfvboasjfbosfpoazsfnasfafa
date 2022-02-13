@@ -85,7 +85,7 @@ local premiumList = {
 	[2724670500] = 'Frutexo',
 	[3240679027] = 'Giovenix231',
 	[3259900627] = 'FinalDestinatioq',
-	--[] = '',
+	[3313886297] = 'RybakTV16',
 	--[] = '',
 	--[] = '',
 	
