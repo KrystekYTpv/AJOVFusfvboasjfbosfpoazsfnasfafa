@@ -71,7 +71,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
     
     function SendWebhook(uid)
     for i,v in pairs(Library.Save.Get().Pets) do
-         if v.uid == uid and getgenv().TrackListHatchNotify[PettoRarity[v.id]] then
+         if v.uid == uid and (table.find(getgenv().TrackListHatchNotify, PettoRarity[v.id]) then
              local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
              local Formation = (v.g and ':crown: Gold') or (v.r and ':rainbow: Rainbow') or (v.dm and ':milky_way: Dark Matter') or ':roll_of_paper: Normal'
              local Thumbnail = GetThumbnail(v.id, ThingyThingyTempTypeThing)
