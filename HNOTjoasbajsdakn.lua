@@ -21,7 +21,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
     end
     
     function Send(Name, Nickname, Strength, Rarity, Thumbnail, Formation, Color, NewPowers, nth)
-        local Webhook = _G.Webhook
+        local Webhook = getgenv().WebHookLink
         local msg = {
             ["username"] = "Pet Webhook Thing",
             ["embeds"] = {
@@ -65,12 +65,13 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
             table.insert(msg["embeds"][1]["fields"], thingy)
         end
         request = http_request or request or HttpPost or syn.request
-        request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
+        request({Url = 
+                , Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
     end
     
     function SendWebhook(uid)
     for i,v in pairs(Library.Save.Get().Pets) do
-         if v.uid == uid and _G.TrackList[PettoRarity[v.id]] then
+         if v.uid == uid and getgenv().TrackListHatchNotify[PettoRarity[v.id]] then
              local ThingyThingyTempTypeThing = (v.g and 'Gold') or (v.r and 'Rainbow') or (v.dm and 'Dark Matter') or 'Normal'
              local Formation = (v.g and ':crown: Gold') or (v.r and ':rainbow: Rainbow') or (v.dm and ':milky_way: Dark Matter') or ':roll_of_paper: Normal'
              local Thumbnail = GetThumbnail(v.id, ThingyThingyTempTypeThing)
@@ -91,8 +92,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
      end
     end
     
-    if _G.Connection then _G.Connection:Disconnect() end
-    _G.Connection = game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets.ChildAdded:Connect(function(child)
+    if getgenv().Connection then getgenv().Connection:Disconnect() end
+    getgenv().Connection = game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets.ChildAdded:Connect(function(child)
         SendWebhook(child.Name)
     end)
 end
