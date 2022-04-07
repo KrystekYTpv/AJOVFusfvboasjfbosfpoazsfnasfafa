@@ -11,6 +11,7 @@ local donatorList = {
     [2798723274] = 'jailbreakezgra',
     [3447455689] = 'KubizzYoungKFC',
     [3240679027] = 'Giovenix231',
-    --[] = '',
+    [486961582] = 'PracticeRU',
+    
 }
 return donatorList
