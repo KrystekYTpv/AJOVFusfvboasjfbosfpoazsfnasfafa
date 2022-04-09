@@ -1,6 +1,7 @@
-local donatorList = loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/AJOVFusfvboasjfbosfpoazsfnasfafa/main/donatorList.lua', true))()
-    
-if donatorList[game.Players.LocalPlayer.UserId] and donatorList[game.Players.LocalPlayer.UserId] == game.Players.LocalPlayer.Name then
+local hwidListDonator = loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/AJOVFusfvboasjfbosfpoazsfnasfafa/main/hwidListDonator.lua', true))()
+local HwidCheck = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
+
+if table.find(hwidListDonator,HwidCheck) then
     getgenv().StartPetIconDeleter = true
     while wait(1) and StartPetIconDeleter do
         for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetDescendants()) do
