@@ -19,7 +19,7 @@ local hwidList = {
     '00A48408-AB7C-4C05-BAAA-596B82C6F630'; --Tym0 Wi3#7553
     'DF41220D-F1A4-4553-98E7-598556392358'; --Belugha#2137
     '1485EF03-DAA4-4DB6-A353-7534B3ACFE78'; --RybakYT#8196
-    --''; --
+    '053C197D-A3B5-474F-9A22-D1BAA4998BB2'; --! Browciax#1682
     --''; --
     --''; --
     --''; --
