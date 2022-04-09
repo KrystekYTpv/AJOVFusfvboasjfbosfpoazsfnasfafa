@@ -1,4 +1,4 @@
-local hwidPX = {
-    "D14E191C-1177-463B-B2B4-BFE475A18ED9",
+local hwidList = {
+    [E522BBE6-5E60-4FFD-B5CC-3850020C7167],
 }
-return hwidPX
+return hwidList
