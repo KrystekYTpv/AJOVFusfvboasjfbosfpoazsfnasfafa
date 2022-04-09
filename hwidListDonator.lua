@@ -1,7 +1,7 @@
 local hwidList = {
     'E522BBE6-5E60-4FFD-B5CC-3850020C7167';
     '724ADCEF-D57D-487D-B0FE-05B62DD170DC';
-    --'';
+    'EC51DC47-1305-4FB5-ABE2-FD430A0F3268';
     --'';
     --'';
     --'';
