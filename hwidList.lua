@@ -20,7 +20,7 @@ local hwidList = {
     'DF41220D-F1A4-4553-98E7-598556392358'; --Belugha#2137
     '1485EF03-DAA4-4DB6-A353-7534B3ACFE78'; --RybakYT#8196
     '053C197D-A3B5-474F-9A22-D1BAA4998BB2'; --! Browciax#1682
-    --''; --
+    'E8B39F41-56AC-4493-B09B-22CD8E360485'; --Astral#0690
     --''; --
     --''; --
     --''; --
