@@ -24,7 +24,7 @@ local hwidList = {
     '7C38C2F9-A259-44EE-A454-8CC439090045'; --!DjFLATRON#9823
     '9CB37EB0-2020-4386-99A2-735C2F4D0B74'; --S3M#3542
     'B693C2E8-4D34-4E0E-8DDE-93932C3CD092'; --Hyperowskyy#1111
-    --''; --
+    '15B84DF0-5C1A-404F-B1A1-68CB9B48756D'; --Krzychuus#0727
     --''; --
     --''; --
     --''; --
