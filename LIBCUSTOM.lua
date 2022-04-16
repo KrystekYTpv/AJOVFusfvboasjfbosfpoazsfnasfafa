@@ -1227,7 +1227,7 @@ function Kavo.CreateLib(kavName, themeList)
                 end
                 
                 -- standard create
-                local notification = utility:Create("ImageLabel", {
+                local notification = Utility:Create("ImageLabel", {
                     Name = "Notification",
                     Parent = self.container,
                     BackgroundTransparency = 1,
@@ -1239,7 +1239,7 @@ function Kavo.CreateLib(kavName, themeList)
                     ZIndex = 3,
                     ClipsDescendants = true
                 }, {
-                    utility:Create("ImageLabel", {
+                    Utility:Create("ImageLabel", {
                         Name = "Flash",
                         Size = UDim2.new(1, 0, 1, 0),
                         BackgroundTransparency = 1,
@@ -1247,7 +1247,7 @@ function Kavo.CreateLib(kavName, themeList)
                         ImageColor3 = themes.TextColor,
                         ZIndex = 5
                     }),
-                    utility:Create("ImageLabel", {
+                    Utility:Create("ImageLabel", {
                         Name = "Glow",
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, -15, 0, -15),
@@ -1258,7 +1258,7 @@ function Kavo.CreateLib(kavName, themeList)
                         ScaleType = Enum.ScaleType.Slice,
                         SliceCenter = Rect.new(24, 24, 276, 276)
                     }),
-                    utility:Create("TextLabel", {
+                    Utility:Create("TextLabel", {
                         Name = "Title",
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 10, 0, 8),
@@ -1269,7 +1269,7 @@ function Kavo.CreateLib(kavName, themeList)
                         TextSize = 14.000,
                         TextXAlignment = Enum.TextXAlignment.Left
                     }),
-                    utility:Create("TextLabel", {
+                    Utility:Create("TextLabel", {
                         Name = "Text",
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 10, 1, -24),
@@ -1280,7 +1280,7 @@ function Kavo.CreateLib(kavName, themeList)
                         TextSize = 12.000,
                         TextXAlignment = Enum.TextXAlignment.Left
                     }),
-                    utility:Create("ImageButton", {
+                    Utility:Create("ImageButton", {
                         Name = "Accept",
                         BackgroundTransparency = 1,
                         Position = UDim2.new(1, -26, 0, 8),
@@ -1289,7 +1289,7 @@ function Kavo.CreateLib(kavName, themeList)
                         ImageColor3 = themes.TextColor,
                         ZIndex = 4
                     }),
-                    utility:Create("ImageButton", {
+                    Utility:Create("ImageButton", {
                         Name = "Decline",
                         BackgroundTransparency = 1,
                         Position = UDim2.new(1, -26, 1, -24),
@@ -1301,7 +1301,7 @@ function Kavo.CreateLib(kavName, themeList)
                 })
                 
                 -- dragging
-                utility:DraggingEnabled(notification)
+                Utility:DraggingEnabled(notification)
                 
                 -- position and size
                 title = title or "Notification"
@@ -1313,14 +1313,14 @@ function Kavo.CreateLib(kavName, themeList)
                 local padding = 10
                 local textSize = game:GetService("TextService"):GetTextSize(text, 12, Enum.Font.Gotham, Vector2.new(math.huge, 16))
                 
-                notification.Position = library.lastNotification or UDim2.new(0, padding, 1, -(notification.AbsoluteSize.Y + padding))
+                notification.Position = Utility.lastNotification or UDim2.new(0, padding, 1, -(notification.AbsoluteSize.Y + padding))
                 notification.Size = UDim2.new(0, 0, 0, 60)
                 
-                utility:Tween(notification, {Size = UDim2.new(0, textSize.X + 70, 0, 60)}, 0.2)
+                Utility:Tween(notification, {Size = UDim2.new(0, textSize.X + 70, 0, 60)}, 0.2)
                 wait(0.2)
                 
                 notification.ClipsDescendants = false
-                utility:Tween(notification.Flash, {
+                Utility:Tween(notification.Flash, {
                     Size = UDim2.new(0, 0, 0, 60),
                     Position = UDim2.new(1, 0, 0, 0)
                 }, 0.2)
@@ -1336,12 +1336,12 @@ function Kavo.CreateLib(kavName, themeList)
                     active = false
                     notification.ClipsDescendants = true
                     
-                    library.lastNotification = notification.Position
+                    Utility.lastNotification = notification.Position
                     notification.Flash.Position = UDim2.new(0, 0, 0, 0)
-                    utility:Tween(notification.Flash, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
+                    Utility:Tween(notification.Flash, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
                     
                     wait(0.2)
-                    utility:Tween(notification, {
+                    Utility:Tween(notification, {
                         Size = UDim2.new(0, 0, 0, 60),
                         Position = notification.Position + UDim2.new(0, textSize.X + 70, 0, 0)
                     }, 0.2)
