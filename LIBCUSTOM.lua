@@ -1219,7 +1219,7 @@ function Kavo.CreateLib(kavName, themeList)
                     return TogFunction
             end
 
-            function library:Notify(title, text, callback)
+            function Kavo:Notify(title, text, callback)
 	
                 -- overwrite last notification
                 if self.activeNotification then
