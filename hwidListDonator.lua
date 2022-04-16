@@ -9,7 +9,8 @@ local hwidList = {
     '1485EF03-DAA4-4DB6-A353-7534B3ACFE78'; --RybakYT#8196
     'C870AEEC-B28A-4AC6-B2B7-6C56674AF318'; --𝕯𝖆𝖗𝖐 𝕬𝖓𝖌𝖊𝖑♡#2103
     '23AA970F-3269-4C37-9B4F-98DBF34937BC'; --MrPatryX#4464
-    '8E072D4F-53A7-4E1E-AE88-300A8C79C520'; --Andre Hudson#6312
+    '8E072D4F-53A7-4E1E-AE88-300A8C79C520'; --Andre Hudson#6312\
+    'C4A2B623-5BD1-4E02-A9D8-383DCC9ABAF0'; --Gigant#0001
     --''; --
     --''; --
     --''; --
