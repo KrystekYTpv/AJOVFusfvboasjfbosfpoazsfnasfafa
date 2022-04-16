@@ -8,7 +8,7 @@ local hwidList = {
     'A5F4DDCF-04A8-4FCF-BC1A-E37EF35A7C31'; --Tym0 Wi3#7553
     '1485EF03-DAA4-4DB6-A353-7534B3ACFE78'; --RybakYT#8196
     'C870AEEC-B28A-4AC6-B2B7-6C56674AF318'; --𝕯𝖆𝖗𝖐 𝕬𝖓𝖌𝖊𝖑♡#2103
-    --'';
+    '23AA970F-3269-4C37-9B4F-98DBF34937BC'; --MrPatryX#4464
     --'';
     --'';
     --'';
