@@ -31,8 +31,8 @@ local hwidList = {
     'E45F756B-C6A6-4409-8027-C07DA1F4B176'; --fev#3642
     'A6143739-29EA-4272-94B0-CDB1576454D1'; --Luckyツ#4014
     'C4A2B623-5BD1-4E02-A9D8-383DCC9ABAF0'; --Gigant#0001
-    --''; --
-    --''; --
+    '6FC84A8B-C496-4C66-A7EF-F3A75B59D46C'; --sebixson#6322
+    '3043C5A2-D1FE-49E9-A9F5-A68363AAEA9F'; --! 'MaTIAX🥨#2115
     --''; --
     --''; --
     --''; --
