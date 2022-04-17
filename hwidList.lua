@@ -34,6 +34,13 @@ local hwidList = {
     '6FC84A8B-C496-4C66-A7EF-F3A75B59D46C'; --sebixson#6322
     '3043C5A2-D1FE-49E9-A9F5-A68363AAEA9F'; --! 'MaTIAX🥨#2115
     '9FD7DDE7-8CE4-49E3-82C7-990CA75F2C7E'; --trawismontana#7051
+    '207FE96B-FBDA-4DBF-94B8-8B97E01AE788'; --. Michał#8744
+    --''; --
+    --''; --
+    --''; --
+    --''; --
+    --''; --
+    --''; --
     --''; --
     --''; --
     
