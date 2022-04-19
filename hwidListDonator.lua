@@ -12,6 +12,7 @@ local hwidList = {
     '8E072D4F-53A7-4E1E-AE88-300A8C79C520'; --Andre Hudson#6312\
     'C4A2B623-5BD1-4E02-A9D8-383DCC9ABAF0'; --Gigant#0001
     '01DFE657-6420-4B23-ABE1-C551B7537EC9'; --Kacpero20#7154
+    '00A48408-AB7C-4C05-BAAA-596B82C6F630'; --Tym0 Wi3#7553
     --''; --
     --''; --
     --''; --
