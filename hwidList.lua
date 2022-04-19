@@ -37,7 +37,7 @@ local hwidList = {
     '207FE96B-FBDA-4DBF-94B8-8B97E01AE788'; --. Michał#8744
     '01DFE657-6420-4B23-ABE1-C551B7537EC9'; --Kacpero20#7154
     '346A3D94-EA01-4440-8C51-3EA8B2881AFF'; --VͮOͦIͥDͩ#9493
-    --''; --
+    '251790EF-DD36-46D3-8FAA-ABC5026C4425'; --kiep#3390
     --''; --
     --''; --
     --''; --
