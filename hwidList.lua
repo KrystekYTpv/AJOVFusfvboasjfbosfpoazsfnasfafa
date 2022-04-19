@@ -38,7 +38,7 @@ local hwidList = {
     '01DFE657-6420-4B23-ABE1-C551B7537EC9'; --Kacpero20#7154
     '346A3D94-EA01-4440-8C51-3EA8B2881AFF'; --VͮOͦIͥDͩ#9493
     '251790EF-DD36-46D3-8FAA-ABC5026C4425'; --kiep#3390
-    --''; --
+    '6ABB753B-0A63-4BCF-AB7F-D6FD58A6C84D'; --Katzis#9352
     --''; --
     --''; --
     --''; --
