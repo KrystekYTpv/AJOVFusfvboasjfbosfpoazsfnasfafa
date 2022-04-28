@@ -19,6 +19,7 @@ local hwidList = {
     'B693C2E8-4D34-4E0E-8DDE-93932C3CD092'; --Hyperowskyy#1111
     'BFACFBA5-D6EB-4639-B47B-F979CFF6ED63'; --sebixson#6322
     '3043C5A2-D1FE-49E9-A9F5-A68363AAEA9F'; --! 'MaTIAX🥨#2115
+    'BEB462E8-5937-4067-A296-681AFF306F55'; --kkkkkkkkkkkkkkkkkkkkkkkk#3970
     --''; --
     --''; --
     --''; --
