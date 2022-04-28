@@ -2,11 +2,22 @@ local hwidListDonator = loadstring(game:HttpGet('https://raw.githubusercontent.c
 local HwidCheck = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
 
 if table.find(hwidListDonator,HwidCheck) then
-    getgenv().StartPetIconDeleter = true
-    while wait(1) and StartPetIconDeleter do
-        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetDescendants()) do
-            if v.Name == "PetIcon" then
-                v:Destroy()
+    if getgenv().StartPetIconDelete == true then
+        StartPetIconDeleter = true
+        while wait(1) and StartPetIconDeleter == true do
+            for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetDescendants()) do
+                if v.Name == "PetIcon" then
+                    v.Visible = false
+                end
+            end
+        end
+    elseif getgenv().StartPetIconDelete == false then
+        StartPetIconDeleter = false
+        while wait(1) and StartPetIconDeleter == false do
+            for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:GetDescendants()) do
+                if v.Name == "PetIcon" then
+                    v.Visible = true
+                end
             end
         end
     end
