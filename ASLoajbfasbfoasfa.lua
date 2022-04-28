@@ -1,7 +1,4 @@
-local hwidListDonator = loadstring(game:HttpGet('https://raw.githubusercontent.com/KrystekYTpv/AJOVFusfvboasjfbosfpoazsfnasfafa/main/hwidListDonator.lua', true))()
-local HwidCheck = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
 
-if table.find(hwidListDonator,HwidCheck) then
     if getgenv().StartPetIconDelete == true then
         StartPetIconDeleter = true
         while wait(1) and StartPetIconDeleter == true do
@@ -21,6 +18,3 @@ if table.find(hwidListDonator,HwidCheck) then
             end
         end
     end
-else
-    require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Sorry you have to buy Donator from: \n!KrystekYT#8687")
-end
