@@ -22,7 +22,7 @@ local hwidList = {
     'BEB462E8-5937-4067-A296-681AFF306F55'; --kkkkkkkkkkkkkkkkkkkkkkkk#3970
     '19FD6DCE-6FF1-405E-81C4-1FD651B72210'; --Krzyżak#1939
     '9CB37EB0-2020-4386-99A2-735C2F4D0B74'; --throw魔#3542
-    --''; --
+    '56C11C3A-4384-47CD-B4B9-631111592672'; --Kacpero20#7154 v2
     --''; --
     --''; --
     --''; --
