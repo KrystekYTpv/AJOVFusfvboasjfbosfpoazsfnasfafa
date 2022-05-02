@@ -45,7 +45,7 @@ local hwidList = {
     '67DA7854-2BC3-4F44-9EEB-EBC0FE5AD3B4'; --MrGTR#1337
     '9EC67E43-D695-45F2-A30A-E7807F4BF80A'; --Soichiro#0001
     '19FD6DCE-6FF1-405E-81C4-1FD651B72210'; --Krzyżak#1939
-    --''; --
+    '168AF3FB-4287-4CB1-9AB8-DCD03EF5350A'; --FlipFlop#0694
     --''; --
     --''; --
     --''; --
