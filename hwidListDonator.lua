@@ -26,7 +26,7 @@ local hwidList = {
     '06A54CD5-E5AA-44AA-B1B3-5F321B147679'; --Puchatek#5660
     '70ED779F-B811-4A8B-9675-F7FF9197DB85'; --Amazonkaaa#6784
     'DAD53574-B55E-479C-B734-AB75FC8810F2'; --Bambobab#3566
-    --''; --
+    '9EC67E43-D695-45F2-A30A-E7807F4BF80A'; --Soichiro#0001
     --''; --
     --''; --
     --''; --
