@@ -49,7 +49,7 @@ local hwidList = {
     '56C11C3A-4384-47CD-B4B9-631111592672'; --Kacpero20#7154 v2
     '9A578CBF-0D5C-4BD9-96A9-F13B945DF6B7'; --maksoo#4066
     'DAD53574-B55E-479C-B734-AB75FC8810F2'; --Bambobab#3566
-    --''; --
+    'DB97741A-EA8D-40CB-9CCB-643D7833DB2D'; --Rekomendacja#8301
     --''; --
     --''; --
     --''; --
