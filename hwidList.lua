@@ -51,7 +51,7 @@ local hwidList = {
     'DAD53574-B55E-479C-B734-AB75FC8810F2'; --Bambobab#3566
     'DB97741A-EA8D-40CB-9CCB-643D7833DB2D'; --Rekomendacja#8301
     'C5BDEF68-2862-4CDB-AA15-AEB7E2A0A340'; --Broxi#1880
-    --''; --
+    '2D0AB7BF-CA48-47D1-B296-0D5A803BFFAE'; --R3voolss#2115
     --''; --
     --''; --
     --''; --
