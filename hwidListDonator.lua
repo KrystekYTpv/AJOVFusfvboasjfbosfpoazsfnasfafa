@@ -29,7 +29,7 @@ local hwidList = {
     '9EC67E43-D695-45F2-A30A-E7807F4BF80A'; --Soichiro#0001
     '0A604EE6-97E4-4676-8CDA-3E897A9443FB'; --Pogromca6#2137
     'BCF5A102-1F39-451B-94B1-93968CB0FCD1'; --maksoo#4066
-    --''; --
+    '9EAE150F-9D9A-43D1-B4DA-BAA42FC62CAC'; --fułoruchacistara#2369
     --''; --
     --''; --
     --''; --
