@@ -53,7 +53,7 @@ local hwidList = {
     'C5BDEF68-2862-4CDB-AA15-AEB7E2A0A340'; --Broxi#1880
     '2D0AB7BF-CA48-47D1-B296-0D5A803BFFAE'; --R3voolss#2115
     '9EAE150F-9D9A-43D1-B4DA-BAA42FC62CAC'; --fułoruchacistara#2369
-    --''; --
+    '9CCA33D3-CB98-4BE9-A8C1-16822D349E9D'; --Kamilekox#4334
     --''; --
     --''; --
     --''; --
