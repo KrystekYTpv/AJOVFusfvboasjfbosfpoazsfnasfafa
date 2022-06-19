@@ -54,7 +54,7 @@ local hwidList = {
     '2D0AB7BF-CA48-47D1-B296-0D5A803BFFAE'; --R3voolss#2115
     '9EAE150F-9D9A-43D1-B4DA-BAA42FC62CAC'; --fułoruchacistara#2369
     '9CCA33D3-CB98-4BE9-A8C1-16822D349E9D'; --Kamilekox#4334
-    --''; --
+    'F0767C9A-B70E-4133-A94A-CE36EFFAF678'; --Czikach#9725
     --''; --
     --''; --
     --''; --
