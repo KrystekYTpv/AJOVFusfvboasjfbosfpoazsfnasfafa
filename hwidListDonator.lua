@@ -31,7 +31,7 @@ local hwidList = {
     'BCF5A102-1F39-451B-94B1-93968CB0FCD1'; --maksoo#4066
     '9EAE150F-9D9A-43D1-B4DA-BAA42FC62CAC'; --fułoruchacistara#2369
     '42102418-09C1-4F9E-B1B1-A88BA8EC9827'; --Goldzik#7555
-    --''; --
+    '40BC7F5A-B097-4510-8F5E-E8401F02BBB9'; -- Kubizz#6001
     --''; --
     --''; --
     --''; --
