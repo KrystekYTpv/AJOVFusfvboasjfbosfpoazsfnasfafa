@@ -5,7 +5,7 @@ local hwidListPosPet = {
     '7C38C2F9-A259-44EE-A454-8CC439090045'; -- !DjFLATRON#9823
     '7C120024-EE16-4FEE-AFDC-B3F8FCCD7511'; -- Andre Hudson#6312
     '506D21FC-1DFE-4669-A96B-73155A679713'; -- Kamilekox#4334
-    --''; --
+    '251790EF-DD36-46D3-8FAA-ABC5026C4425'; -- zadymiaż#4193
     --''; --
     --''; --
     --''; --
