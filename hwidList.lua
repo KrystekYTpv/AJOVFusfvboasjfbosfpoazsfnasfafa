@@ -60,7 +60,7 @@ local hwidList = {
     '42102418-09C1-4F9E-B1B1-A88BA8EC9827'; --Goldzik#7555
     '40BC7F5A-B097-4510-8F5E-E8401F02BBB9'; -- Kubizz#6001
     'B09D8347-F43B-4737-BA2A-BC5C31EC163C'; -- V3enix#5171
-    --''; --
+    '6EF10AF0-40D2-4624-B441-30EE0F30E6C1'; -- ItsN0tMe#0001
     --''; --
     --''; --
     --''; --
