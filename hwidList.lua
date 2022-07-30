@@ -62,7 +62,6 @@ local hwidList = {
     'B09D8347-F43B-4737-BA2A-BC5C31EC163C'; -- V3enix#5171
     '6EF10AF0-40D2-4624-B441-30EE0F30E6C1'; -- ItsN0tMe#0001
     'D521F3F5-F192-4374-AF5E-D000711593B2'; -- ! Gl0ck#4819
-    '960D2C6C-FC88-4E69-861A-280F6C4C7863'; --ttttt
     --''; --
     --''; --
     --''; --
