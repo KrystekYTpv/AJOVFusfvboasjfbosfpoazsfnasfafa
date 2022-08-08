@@ -67,7 +67,7 @@ local hwidList = {
     'E4A822F0-660C-44B8-A320-D226C57808C0'; -- !god_maak#8888
     '27C72F00-160A-496A-B43D-2DE618F3CED3'; -- Boyovkazinandreuqrliondiesaniaro#8153
     'B76EE46B-4BFF-4066-915A-8B6B6DB5B236'; -- Hipek#5241
-    'A21FBDDE-307E-44E5-AD78-C4C97285D41B'; -- ! Browar#1682
+    '36BC4F84-8234-43A9-8F28-00985928A617'; -- ! Browar#1682
     --''; --
     --''; --
     --''; --
