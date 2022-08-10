@@ -68,7 +68,7 @@ local hwidList = {
     '27C72F00-160A-496A-B43D-2DE618F3CED3'; -- Boyovkazinandreuqrliondiesaniaro#8153
     'B76EE46B-4BFF-4066-915A-8B6B6DB5B236'; -- Hipek#5241
     '36BC4F84-8234-43A9-8F28-00985928A617'; -- ! Browar#1682
-    --''; --
+    '960D2C6C-FC88-4E69-861A-280F6C4C7863'; -- czxjnik#0001
     --''; --
     --''; --
     --''; --
