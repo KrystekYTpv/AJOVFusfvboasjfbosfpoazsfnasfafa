@@ -71,7 +71,7 @@ local hwidList = {
     '960D2C6C-FC88-4E69-861A-280F6C4C7863'; -- czxjnik#0001
     '5D587C9D-5603-438A-8C6A-7E2FBC40AE73'; -- KurwiBonczek_#1374
     'BD4B296F-906E-4E0B-988F-F251834ED290'; -- sebixson#6322
-    --''; --
+    '0D81C993-989D-4330-A9EF-6B7FC2DF3598'; -- ! 'MaTIAX#1616
     --''; --
     --''; --
     --''; --
