@@ -32,7 +32,7 @@ local hwidList = {
     '9EAE150F-9D9A-43D1-B4DA-BAA42FC62CAC'; --fułoruchacistara#2369
     '42102418-09C1-4F9E-B1B1-A88BA8EC9827'; --Goldzik#7555
     '40BC7F5A-B097-4510-8F5E-E8401F02BBB9'; -- Kubizz#6001
-    --''; --
+    '2D271AEC-A087-4B1D-B58E-A2F25C8B1D84'; -- !ts Mati ;3#7555
     --''; --
     --''; --
     --''; --
