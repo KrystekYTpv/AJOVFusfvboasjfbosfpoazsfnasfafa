@@ -2,7 +2,7 @@ local hwidList = {
     { -- 419834999991304213
         id = 'E522BBE6-5E60-4FFD-B5CC-3850020C7167',
         expirationDate = {
-            year = 2023,
+            year = 2030,
             month = 4,
             day = 21
         }
