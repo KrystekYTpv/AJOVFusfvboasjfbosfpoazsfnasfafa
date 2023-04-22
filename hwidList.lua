@@ -44,6 +44,15 @@ local hwidList = {
         }
     },
     
+    { -- 904082224557719633
+        id = 'BCCA71A0-0A75-4FE2-8B08-38E5E9CF0147',
+        expirationDate = {
+            year = 2023,
+            month = 4,
+            day = 29
+        }
+    },
+    
     {
         id = 'dozmiany',
         expirationDate = {
