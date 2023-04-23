@@ -67,7 +67,7 @@ local hwidList = {
         expirationDate = {
             year = 2023,
             month = 4,
-            day = 29
+            day = 30
         }
     },
     
