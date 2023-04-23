@@ -71,6 +71,24 @@ local hwidList = {
         }
     },
     
+    { -- 994508000599474218
+        id = 'A9DA3B7E-6B4F-48D9-A77A-AE314ACADDED',
+        expirationDate = {
+            year = 2023,
+            month = 4,
+            day = 30
+        }
+    },
+    
+    { -- 704462856690729043
+        id = '79C688CD-6214-42D5-B508-561F51E9EA6C',
+        expirationDate = {
+            year = 2023,
+            month = 4,
+            day = 30
+        }
+    },
+    
     {
         id = 'dozmiany',
         expirationDate = {
