@@ -117,7 +117,7 @@ local hwidList = {
      },
      
      { -- 482238374741016606
-         id = 'D04F104E-3B11-489E-9B26-ADE691797ED4',
+         id = 'D04F104E-3B11-480E-9B26-ADE691797ED4',
          expirationDate = {
              year = 2023,
              month = 7,
